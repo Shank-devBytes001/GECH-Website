@@ -1,0 +1,290 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+samm {
+      color: rgb(221, 247, 128);
+}
+
+header {
+    background: rgba(0, 51, 102, 0.8); /* Slight overlay to improve text readability */
+    color: #fbfcfd;
+    padding: 2rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideIn 1s ease-out; /* Add animation */
+}
+
+/* General header styling */
+header {
+    position: relative; /* Default position */
+    width: 100%;
+    transition: transform 0.3s ease; /* Smooth transition for collapsing */
+}
+
+/* Sticky navigation styling */
+sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f3f3f5; /* Background color to match header */
+    border-bottom: 1px solid #f2f2f4; /* Optional: border at the bottom */
+    z-index: 1000; /* Ensure it's above other content */
+    transition: transform 0.3s ease;
+}
+
+/* Hide other parts of the header when sticky */
+.header-collapsed .header-content {
+    transform: translateY(-100%); /* Hide the content */
+}
+
+/* Logo styling */
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Smooth transition for logos */
+}
+
+.logos.hidden {
+    opacity: 0; /* Hide logos */
+}
+
+/* Styling for the navigation */
+nav {
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    white-space: nowrap; /* Prevent items from wrapping */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+nav {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+
+/* Container for horizontal scrolling */
+nav {
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Keeps the list items in a single line */
+    border-bottom: 1px solid #7f99f5; /* Optional: adds a border at the bottom */
+    
+    padding: 0 10px; /* Optional: adds padding for better appearance */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+nav {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+nav ul {
+    display: flex; /* Aligns list items in a row */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes default bullet points */
+}
+
+nav ul li {
+    display: inline-block; /* Makes each list item inline */
+    margin: 0; /* Removes default margin */
+}
+
+nav ul li a {
+    display: block; /* Makes the entire list item clickable */
+    padding: 10px 15px;
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Text color */
+    background-color: #022a6b; /* Background color for better visibility */
+    border-radius: 4px; /* Rounded corners */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Background color on hover */
+}
+
+/* Style for logos container */
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* General logo styling */
+.logos img {
+    width: 100px; /* Set a fixed size for logos */
+    height: 100px; /* Ensure height matches width for circular shape */
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image covers the circle area */
+    border: 2px solid #333; /* Optional: adds a border around the logo */
+    background-color: #fff; /* Optional: adds a background color inside the circle */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logos img {
+    width: 100px;
+    height: auto;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-content h2 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #13120e;
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+    
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(243, 241, 241, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    
+    
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-image {
+        max-width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section h2 {
+    color: #003366;
+    margin-top: 0;
+}
+
+footer {
+    background: rgba(0, 51, 102, 0.8); /* Slight overlay to improve text readability */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 1rem
+}
+apple {
+    color: rgb(251, 77, 71);
+}

@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background: url('login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+* Style for logos container */
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* General logo styling */
+.logos img {
+    width: 100px; /* Set a fixed size for logos */
+    height: 100px; /* Ensure height matches width for circular shape */
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image covers the circle area */
+    border: 2px solid #333; /* Optional: adds a border around the logo */
+    background-color: #fff; /* Optional: adds a background color inside the circle */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logos img {
+    width: 100px;
+    height: auto;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 30px; /* Space between heading and login box */
+    background-color: rgba(0, 51, 102, 0.6); /* Semi-transparent background */
+    color: #fff; /* White text color for better contrast */
+    padding: 20px; /* Add padding to the heading area */
+    border-radius: 8px; /* Optional: rounded corners for the background */
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 1rem;
+    
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    opacity: 0; /* Start hidden for animation */
+    animation: fadeInUp 1s forwards; /* Apply fade-in-up animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#message {
+    color: red;
+    margin-top: 10px;
+}
+
