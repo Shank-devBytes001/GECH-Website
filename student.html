@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('4.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f3eded;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px; /* Add padding to the top and sides */
+            position: scroll;
+            top: 0; /* Position the logos at the top */
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: add a background color with transparency */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .logos img {
+            width: 100px; /* Set a fixed size for logos */
+            height: 100px; /* Ensure height matches width for circular shape */
+            border-radius: 50%; /* Makes the logo circular */
+            object-fit: cover; /* Ensures the image covers the circle area */
+            background-color: #f7f3f3; /* Optional: adds a background color inside the circle */
+        }
+
+        nav {
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+            white-space: nowrap; /* Prevent items from wrapping */
+            border-bottom: 1px solid #3a456b; /* Optional: adds a border at the bottom */
+            padding: 0; /* Optional: adds padding for better appearance */
+            margin-top: 0; /* Add margin to ensure it starts below the logos */
+        }
+
+        nav::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for WebKit browsers */
+        }
+
+        nav {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+        nav ul {
+            display: flex; /* Aligns list items in a row */
+            padding: 5px;
+            margin: 0;
+            list-style: none; /* Removes default bullet points */
+        }
+
+        nav ul li {
+            display: inline-block; /* Makes each list item inline */
+            margin: 25px; /* Adds spacing between items */
+        }
+
+        nav ul li a {
+            display: block; /* Makes the entire list item clickable */
+            padding: 10px 15px;
+            text-decoration: none; /* Removes underline */
+            color: #f8f6f6; /* Text color */
+            background-color: #720604; /* Background color for better visibility */
+            border-radius: 5px; /* Rounded corners */
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+
+        nav ul li a:hover {
+            background-color: #161515; /* Background color on hover */
+        }
+
+        .header-content {
+            max-width: 120px;
+            margin: auto;
+            padding: 0 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #f2eeee;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #f2efef;
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        sa {
+            color: #131314;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Optional: background color for better text readability */
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #ffffff; /* Text color */
+        }
+        samm {
+            color: rgb(17, 27, 170);
+        }
+        footer {
+            background: rgba(123, 8, 2, 0.8); /* Slight overlay to improve text readability */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        footer .social-media a {
+            color: #fff;
+            margin: 0 1rem
+        }
+        apple {
+            color: aqua;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ee5757;
+        }
+        caption {
+            caption-side: top;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logos">
+        <img src="karnataka.jpg" alt="Government of Karnataka Logo" class="left-logo">
+        <center>
+            <sa>
+                <h1>Government Engineering College Hassan</h1>
+                <h2>Computer Science Engineering Department</h2>
+            </sa>
+        </center>
+        <img src="vtu.jpg" alt="VTU Logo" class="right-logo">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="a1main.html" target="_blank">Home</a></li>
+            <li><a href="a1main.html" target="_blank">Academic Programs</a></li>
+            <li><a href="a1main.html" target="_blank">Research</a></li>
+            <li><a href="a1main.html" target="_blank">Admissions</a></li>
+            <li><a href="resources.html" target="_blank">Resources</a></li>
+            <li><a href="student.html" target="_blank">Students</a></li>
+            <li><a href="timetable.html" target="_blank">Time Tables</a></li>
+            <li><a href="a1main.html" target="_blank">Contact and Visit</a></li>
+            <li><a href="a1main.html" target="_blank">About Us</a></li>
+            <li><a href="creaters.html" target="_blank">About Creaters</a></li>
+        </ul>
+        <marquee direction="right" delay="30 seconds">
+            <b>GECH-CSE Team <samm>"SAMM 2021"<samm></b>
+        </marquee>
+    </nav>
+    <center>
+    <section id="sudent">
+        <h2>STUDENTS AT OUR DEPARTMENT</h2>
+        <hr>
+        <p><h3>FIRST YEAR</h3></p>
+        <hr>
+        <table>
+            <caption>G.E.C. HASSAN | Dept -: CS | 2nd sem 2023-24</caption>
+            <thead>
+                <tr>
+                    <th>Sol. No</th>
+                    <th>Name</th>
+                    <th>USN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Aditya Shashikant Narasannavar</td><td>4GH23CS001</td></tr>
+                <tr><td>2</td><td>Afreen Zehra</td><td>4GH23CS002</td></tr>
+                <tr><td>3</td><td>Akash C O</td><td>4GH23CS003</td></tr>
+                <tr><td>4</td><td>Akshay G P</td><td>4GH23CS004</td></tr>
+                <tr><td>5</td><td>Apoorva I U</td><td>4GH23CS005</td></tr>
+                <tr><td>6</td><td>Arshin Kubra C A</td><td>4GH23CS006</td></tr>
+                <tr><td>7</td><td>Bhagyalakshmi L N</td><td>4GH23CS007</td></tr>
+                <tr><td>8</td><td>Bhavani D P</td><td>4GH23CS008</td></tr>
+                <tr><td>9</td><td>Bindu A B</td><td>4GH23CS009</td></tr>
+                <tr><td>10</td><td>Bhogesh Basappa Pujari</td><td>4GH23CS010</td></tr>
+                <tr><td>11</td><td>Charan T P</td><td>4GH23CS011</td></tr>
+                <tr><td>12</td><td>Divya H N</td><td>4GH23CS012</td></tr>
+                <tr><td>13</td><td>Drushtitha N C</td><td>4GH23CS013</td></tr>
+                <tr><td>14</td><td>G Sandeep</td><td>4GH23CS014</td></tr>
+                <tr><td>15</td><td>Ganavi K S</td><td>4GH23CS015</td></tr>
+                <tr><td>16</td><td>Goudappa Kalagouda Malage</td><td>4GH23CS016</td></tr>
+                <tr><td>17</td><td>Harshitha T M</td><td>4GH23CS017</td></tr>
+                <tr><td>18</td><td>Kavana K P</td><td>4GH23CS018</td></tr>
+                <tr><td>19</td><td>Keerthana C H</td><td>4GH23CS019</td></tr>
+                <tr><td>20</td><td>Keerthana K R</td><td>4GH23CS020</td></tr>
+                <tr><td>21</td><td>Kruthi D B</td><td>4GH23CS021</td></tr>
+                <tr><td>22</td><td>Likhith M Gowda</td><td>4GH23CS022</td></tr>
+                <tr><td>23</td><td>Likhith T</td><td>4GH23CS023</td></tr>
+                <tr><td>24</td><td>Madhu R B</td><td>4GH23CS024</td></tr>
+                <tr><td>25</td><td>Mahalakshmi K J</td><td>4GH23CS025</td></tr>
+                <tr><td>26</td><td>Maina Rani</td><td>4GH23CS026</td></tr>
+                <tr><td>27</td><td>Mamatha P</td><td>4GH23CS027</td></tr>
+                <tr><td>28</td><td>Manamohan M</td><td>4GH23CS028</td></tr>
+                <tr><td>29</td><td>Manikanta Madhavan S</td><td>4GH23CS029</td></tr>
+                <tr><td>30</td><td>Manjula</td><td>4GH23CS030</td></tr>
+                <tr><td>31</td><td>Manya</td><td>4GH23CS031</td></tr>
+                <tr><td>32</td><td>Mariswami</td><td>4GH23CS032</td></tr>
+                <tr><td>33</td><td>Maruthi J</td><td>4GH23CS033</td></tr>
+                <tr><td>34</td><td>Mohammed Owais</td><td>4GH23CS034</td></tr>
+                <tr><td>35</td><td>Monika M</td><td>4GH23CS035</td></tr>
+                <tr><td>36</td><td>Mounesh H</td><td>4GH23CS036</td></tr>
+                <tr><td>37</td><td>Neha Banu</td><td>4GH23CS037</td></tr>
+                <tr><td>38</td><td>Pallavi L M</td><td>4GH23CS038</td></tr>
+                <tr><td>39</td><td>Prajwal</td><td>4GH23CS039</td></tr>
+                <tr><td>40</td><td>Preethi B</td><td>4GH23CS040</td></tr>
+                <tr><td>41</td><td>Rakshitha K N</td><td>4GH23CS041</td></tr>
+                <tr><td>42</td><td>Rithu Shree H M</td><td>4GH23CS042</td></tr>
+                <tr><td>43</td><td>Sangmesh</td><td>4GH23CS043</td></tr>
+                <tr><td>44</td><td>Sania Allasab Nadaf</td><td>4GH23CS044</td></tr>
+                <tr><td>45</td><td>Sanika G L</td><td>4GH23CS045</td></tr>
+                <tr><td>46</td><td>Sanjay Y P</td><td>4GH23CS046</td></tr>
+                <tr><td>47</td><td>Satish Shivappa Bedar</td><td>4GH23CS047</td></tr>
+                <tr><td>48</td><td>Shashanka S M</td><td>4GH23CS048</td></tr>
+                <tr><td>49</td><td>Shubhashree K S</td><td>4GH23CS049</td></tr>
+                <tr><td>50</td><td>Sinchana HS</td><td>4GH23CS050</td></tr>
+                <tr><td>51</td><td>Sinchana S K</td><td>4GH23CS051</td></tr>
+                <tr><td>52</td><td>Sneha A H</td><td>4GH23CS052</td></tr>
+                <tr><td>53</td><td>Suma Danannanavar</td><td>4GH23CS053</td></tr>
+                <tr><td>54</td><td>Thejaswini H N</td><td>4GH23CS054</td></tr>
+                <tr><td>55</td><td>Venkatesh</td><td>4GH23CS055</td></tr>
+                <tr><td>56</td><td>Vidya V</td><td>4GH23CS056</td></tr>
+                <tr><td>57</td><td>Vidyalakshmee Beerappa Habagonde</td><td>4GH23CS057</td></tr>
+                <tr><td>58</td><td>Vikas K H</td><td>4GH23CS058</td></tr>
+                <tr><td>59</td><td>Vikas Satyanarayan Papti</td><td>4GH23CS059</td></tr>
+                <tr><td>60</td><td>Vinay H</td><td>4GH23CS060</td></tr>
+                <tr><td>61</td><td>Yashaswini K R</td><td>4GH23CS061</td></tr>
+                <tr><td>62</td><td>Yashwanth K S</td><td>4GH23CS062</td></tr>
+                </tbody>
+                </table>
+                
+        <hr><p><h3>SECOND YEAR</h3></p><hr>
+        <table>
+            <caption>G.E.C. HASSAN | Dept -: CS | 4th sem 2023-24</caption>
+            <thead>
+                <tr>
+                    <th>Sol. No</th>
+                    <th>Name</th>
+                    <th>USN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Aarcha Saju</td><td>4GH22CS001</td></tr>
+                <tr><td>2</td><td>Archana M</td><td>4GH22CS003</td></tr>
+                <tr><td>3</td><td>B J Reethu</td><td>4GH22CS004</td></tr>
+                <tr><td>4</td><td>B R ADITHYA</td><td>4GH22CS005</td></tr>
+                <tr><td>5</td><td>Bhagyalakshmi R</td><td>4GH22CS006</td></tr>
+                <tr><td>6</td><td>Bhavyashree. B. H</td><td>4GH22CS007</td></tr>
+                <tr><td>7</td><td>BHOOMIKA M C</td><td>4GH22CS008</td></tr>
+                <tr><td>8</td><td>Chandana A</td><td>4GH22CS009</td></tr>
+                <tr><td>9</td><td>Chidananda Swamy H C</td><td>4GH22CS010</td></tr>
+                <tr><td>10</td><td>Chithra H P</td><td>4GH22CS011</td></tr>
+                <tr><td>11</td><td>DARSHANKUMAR TALAWAR</td><td>4GH22CS013</td></tr>
+                <tr><td>12</td><td>Dhananjaya C J</td><td>4GH22CS014</td></tr>
+                <tr><td>13</td><td>Eshwari Chandrashekar Iyengar</td><td>4GH22CS015</td></tr>
+                <tr><td>14</td><td>G P Chaithanya</td><td>4GH22CS016</td></tr>
+                <tr><td>15</td><td>Ganesha B O</td><td>4GH22CS017</td></tr>
+                <tr><td>16</td><td>HARINISRI K</td><td>4GH22CS018</td></tr>
+                <tr><td>17</td><td>Harish</td><td>4GH22CS019</td></tr>
+                <tr><td>18</td><td>Jahnavi S</td><td>4GH22CS021</td></tr>
+                <tr><td>19</td><td>Kavya H N</td><td>4GH22CS022</td></tr>
+                <tr><td>20</td><td>Kavya M P</td><td>4GH22CS023</td></tr>
+                <tr><td>21</td><td>Krishna ms</td><td>4GH22CS024</td></tr>
+                <tr><td>22</td><td>Lavanya N</td><td>4GH22CS025</td></tr>
+                <tr><td>23</td><td>LITHIN U H</td><td>4GH22CS026</td></tr>
+                <tr><td>24</td><td>M S HEMANTH</td><td>4GH22CS027</td></tr>
+                <tr><td>25</td><td>Mehak Bandhral</td><td>4GH22CS028</td></tr>
+                <tr><td>26</td><td>Mohammed zaid khan</td><td>4GH22CS029</td></tr>
+                <tr><td>27</td><td>Mohitha M Shetty</td><td>4GH22CS030</td></tr>
+                <tr><td>28</td><td>N G GANESHA</td><td>4GH22CS031</td></tr>
+                <tr><td>29</td><td>Naveen p kavalakoppa</td><td>4GH22CS032</td></tr>
+                <tr><td>30</td><td>Nehal</td><td>4GH22CS033</td></tr>
+                <tr><td>31</td><td>Nikitha A R</td><td>4GH22CS034</td></tr>
+                <tr><td>32</td><td>Nishchitha HC</td><td>4GH22CS035</td></tr>
+                <tr><td>33</td><td>Pooja M L</td><td>4GH22CS036</td></tr>
+                <tr><td>34</td><td>Poornashreee</td><td>4GH22CS037</td></tr>
+                <tr><td>35</td><td>Poornesha</td><td>4GH22CS038</td></tr>
+                <tr><td>36</td><td>Priyanka diwanad</td><td>4GH22CS039</td></tr>
+                <tr><td>37</td><td>Purushotham H D</td><td>4GH22CS040</td></tr>
+                <tr><td>38</td><td>Radhika</td><td>4GH22CS041</td></tr>
+                <tr><td>39</td><td>Rahul</td><td>4GH22CS042</td></tr>
+                <tr><td>40</td><td>Rahul Kumar</td><td>4GH22CS043</td></tr>
+                <tr><td>41</td><td>Raksha Aravind</td><td>4GH22CS044</td></tr>
+                <tr><td>42</td><td>Rakshitha B M</td><td>4GH22CS045</td></tr>
+                <tr><td>43</td><td>Renuka K N</td><td>4GH22CS046</td></tr>
+                <tr><td>44</td><td>Reshma M</td><td>4GH22CS047</td></tr>
+                <tr><td>45</td><td>Rohan T K</td><td>4GH22CS048</td></tr>
+                <tr><td>46</td><td>Roshni A</td><td>4GH22CS049</td></tr>
+                <tr><td>47</td><td>Sandhya S</td><td>4GH22CS050</td></tr>
+                <tr><td>48</td><td>Sanvi D Gowda</td><td>4GH22CS051</td></tr>
+                <tr><td>49</td><td>Sharada Shankar Patil</td><td>4GH22CS052</td></tr>
+                <tr><td>50</td><td>Sharanu R Kabane</td><td>4GH22CS053</td></tr>
+                <tr><td>51</td><td>Sharath H N</td><td>4GH22CS054</td></tr>
+                <tr><td>52</td><td>Shyamala</td><td>4GH22CS055</td></tr>
+                <tr><td>53</td><td>Sinchana D R</td><td>4GH22CS056</td></tr>
+                <tr><td>54</td><td>Sinchana S S</td><td>4GH22CS057</td></tr>
+                <tr><td>55</td><td>Spoorthi K S</td><td>4GH22CS058</td></tr>
+                <tr><td>56</td><td>Srushti H L</td><td>4GH22CS059</td></tr>
+                <tr><td>57</td><td>Vaishnavi. S</td><td>4GH22CS060</td></tr>
+                <tr><td>58</td><td>VARUNKUMAR</td><td>4GH22CS061</td></tr>
+                <tr><td>59</td><td>Veeresh shankrappa uddabal</td><td>4GH22CS062</td></tr>
+                <tr><td>60</td><td>Vidya SM</td><td>4GH22CS063</td></tr>
+                <tr><td>61</td><td>Meghashree G</td><td>4GH22CS064</td></tr>
+                <tr><td>62</td><td>Abhilash H S</td><td>4GH22CS065</td></tr>
+                <tr><td>63</td><td>Ganavi S</td><td>4GH22CS066</td></tr>
+                <tr><td>64</td><td>A P Nikhith Gowda</td><td>4GH22CS067</td></tr>
+                <tr><td>66</td><td>Bharath R</td><td>4GH23CS400</td></tr>
+                <tr><td>66</td><td>Gurumurti</td><td>4GH23CS401</td></tr>
+                <tr><td>65</td><td>KRISHNA K UPPAR</td><td>4GH23CS402</td></tr>
+                <tr><td>66</td><td>Likhitha C R</td><td>4GH23CS403</td></tr>
+                <tr><td>67</td><td>Pavithra BL</td><td>4GH23CS404</td></tr>
+                <tr><td>68</td><td>Puneeth Kumar S</td><td>4GH23CS405</td></tr>
+                <tr><td>69</td><td>Rakesh A M</td><td>4GH23CS406</td></tr>
+                <tr><td>70</td><td>Swathi kp</td><td>4GH23CS407</td></tr>
+            </tbody>
+        </table>
+        
+        <hr><p><h3>THIRD YEAR</h3></p><hr>
+        <table>
+            <caption>G.E.C. HASSAN | Dept -: CS | 6th sem 2023-24</caption>
+            <thead>
+                <tr>
+                    <th>Sol. No</th>
+                    <th>Name</th>
+                    <th>USN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Adarsha Y H</td><td>4GH21CS001</td></tr>
+                <tr><td>2</td><td>Akhilesh Shetty G P</td><td>4GH21CS002</td></tr>
+                <tr><td>3</td><td>Arbiya Khanum</td><td>4GH21CS003</td></tr>
+                <tr><td>4</td><td>AYYAPPA HUNASHIKATTI</td><td>4GH21CS004</td></tr>
+                <tr><td>5</td><td>Bhoomika B N</td><td>4GH21CS005</td></tr>
+                <tr><td>6</td><td>Chaitra H S</td><td>4GH21CS006</td></tr>
+                <tr><td>7</td><td>Chandana S K</td><td>4GH21CS007</td></tr>
+                <tr><td>8</td><td>Darshan K A</td><td>4GH21CS008</td></tr>
+                <tr><td>9</td><td>Darshanagowda J</td><td>4GH21CS009</td></tr>
+                <tr><td>10</td><td>Devaraj N M</td><td>4GH21CS010</td></tr>
+                <tr><td>11</td><td>Dhanushree A P</td><td>4GH21CS011</td></tr>
+                <tr><td>12</td><td>GANGADHAR S K</td><td>4GH21CS012</td></tr>
+                <tr><td>13</td><td>Guruprasad H D</td><td>4GH21CS013</td></tr>
+                <tr><td>14</td><td>Habiba Farzana</td><td>4GH21CS014</td></tr>
+                <tr><td>15</td><td>LEFT</td><td>4GH21CS015</td></tr>
+                <tr><td>16</td><td>Harshitha N</td><td>4GH21CS016</td></tr>
+                <tr><td>17</td><td>Hemanth kumar H P</td><td>4GH21CS017</td></tr>
+                <tr><td>18</td><td>kirankumar</td><td>4GH21CS018</td></tr>
+                <tr><td>19</td><td>Lakshmi H R</td><td>4GH21CS019</td></tr>
+                <tr><td>20</td><td>Lavanya L B</td><td>4GH21CS020</td></tr>
+                <tr><td>21</td><td>Lekhana B M</td><td>4GH21CS021</td></tr>
+                <tr><td>22</td><td>Mahammad Azaruddin K A</td><td>4GH21CS022</td></tr>
+                <tr><td>23</td><td>MITHUN K R</td><td>4GH21CS023</td></tr>
+                <tr><td>24</td><td>MITHUN L M</td><td>4GH21CS024</td></tr>
+                <tr><td>25</td><td>Niranjan</td><td>4GH21CS025</td></tr>
+                <tr><td>26</td><td>Noel Antony Lobo</td><td>4GH21CS026</td></tr>
+                <tr><td>27</td><td>Ombasava Swamy</td><td>4GH21CS027</td></tr>
+                <tr><td>28</td><td>Omkar</td><td>4GH21CS028</td></tr>
+                <tr><td>29</td><td>P Shashank Raj</td><td>4GH21CS029</td></tr>
+                <tr><td>30</td><td>Pooja P</td><td>4GH21CS030</td></tr>
+                <tr><td>31</td><td>Prajwal K P</td><td>4GH21CS031</td></tr>
+                <tr><td>32</td><td>Pruthvi Raj</td><td>4GH21CS032</td></tr>
+                <tr><td>33</td><td>Rakshith G M</td><td>4GH21CS033</td></tr>
+                <tr><td>34</td><td>Rakshitha H G</td><td>4GH21CS034</td></tr>
+                <tr><td>35</td><td>Rakshitha K N</td><td>4GH21CS035</td></tr>
+                <tr><td>36</td><td>Ravikiran</td><td>4GH21CS036</td></tr>
+                <tr><td>37</td><td>Rohan</td><td>4GH21CS037</td></tr>
+                <tr><td>38</td><td>Rohan H T</td><td>4GH21CS038</td></tr>
+                <tr><td>39</td><td>Sanchitha M. O</td><td>4GH21CS039</td></tr>
+                <tr><td>40</td><td>Sharanabasava</td><td>4GH21CS040</td></tr>
+                <tr><td>41</td><td>Shashank E R</td><td>4GH21CS041</td></tr>
+                <tr><td>42</td><td>Shreyobhilasha K R</td><td>4GH21CS042</td></tr>
+                <tr><td>43</td><td>Shwetha M J</td><td>4GH21CS043</td></tr>
+                <tr><td>44</td><td>Sinchana A B</td><td>4GH21CS044</td></tr>
+                <tr><td>45</td><td>Sinchana A S</td><td>4GH21CS045</td></tr>
+                <tr><td>46</td><td>Sinchana V Y</td><td>4GH21CS046</td></tr>
+                <tr><td>47</td><td>Sindhu Raj N</td><td>4GH21CS047</td></tr>
+                <tr><td>48</td><td>LEFT</td><td>4GH21CS048</td></tr>
+                <tr><td>49</td><td>Srushti D S</td><td>4GH21CS049</td></tr>
+                <tr><td>50</td><td>Sudeep L</td><td>4GH21CS050</td></tr>
+                <tr><td>51</td><td>LEFT</td><td>4GH21CS051</td></tr>
+                <tr><td>52</td><td>Surabhi J U</td><td>4GH21CS052</td></tr>
+                <tr><td>53</td><td>Sushmita</td><td>4GH21CS053</td></tr>
+                <tr><td>54</td><td>Swathi M N</td><td>4GH21CS054</td></tr>
+                <tr><td>55</td><td>Tanushree N P</td><td>4GH21CS055</td></tr>
+                <tr><td>56</td><td>Thejas T G</td><td>4GH21CS056</td></tr>
+                <tr><td>57</td><td>Thrupthi r shekar</td><td>4GH21CS057</td></tr>
+                <tr><td>58</td><td>Vaishnavi.B</td><td>4GH21CS058</td></tr>
+                <tr><td>59</td><td>Varun D C</td><td>4GH21CS059</td></tr>
+                <tr><td>60</td><td>Harsh Gupta</td><td>4GH21CS060</td></tr>
+                <tr><td>61</td><td>Bushra firdose</td><td>4GH21CS061</td></tr>
+                <tr><td>62</td><td>Nithya</td><td>4GH21CS062</td></tr>
+                <tr><td>63</td><td>Bhagyalakshmi P</td><td>4GH21CS063</td></tr>
+                <tr><td>64</td><td>Kavya D P</td><td>4GH21CS064</td></tr>
+                <tr><td>65</td><td>Abhishek Ganesh</td><td>4GH22CS400</td></tr>
+                <tr><td>66</td><td>Indu</td><td>4GH22CS401</td></tr>
+                <tr><td>67</td><td>Kavya R</td><td>4GH22CS402</td></tr>
+                <tr><td>68</td><td>Narayana</td><td>4GH22CS403</td></tr>
+                <tr><td>69</td><td>Navanath Shankar Pattekar</td><td>4GH22CS404</td></tr>
+                <tr><td>70</td><td>Suchitra S</td><td>4GH22CS405</td></tr>
+                <tr><td>71</td><td>Vilas K R</td><td>4GH22CS406</td></tr>
+                <tr><td>72</td><td>Vinayakumara</td><td>4GH22CS407</td></tr>
+                <tr><td>73</td><td>Jayaraj</td><td>4GH22CS408</td></tr>
+            </tbody>
+        </table>
+
+        <hr><p><h3>FINAL YEAR</h3></p><hr>
+           <P>At present no available already passed out.</P> 
+
+    </section>
+    </center>
+    <footer>
+        <p>&copy; 2024 Government Engineering College Hassan - Computer Science Engineering Department</p>
+        <p>Presented By Team <b><apple>"SAMM"</apple></b> GECH-CSE</p>
+        <div class="social-media">
+            <a href="http://www.gechassan.ac.in/">Facebook</a>
+            <a href="http://www.gechassan.ac.in/">Twitter</a>
+            <a href="http://www.gechassan.ac.in/">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

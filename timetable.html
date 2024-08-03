@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tables</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('4.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f3eded;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px; /* Add padding to the top and sides */
+            position: scroll;
+            top: 0; /* Position the logos at the top */
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: add a background color with transparency */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .logos img {
+            width: 100px; /* Set a fixed size for logos */
+            height: 100px; /* Ensure height matches width for circular shape */
+            border-radius: 50%; /* Makes the logo circular */
+            object-fit: cover; /* Ensures the image covers the circle area */
+            background-color: #f7f3f3; /* Optional: adds a background color inside the circle */
+        }
+
+        nav {
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+            white-space: nowrap; /* Prevent items from wrapping */
+            border-bottom: 1px solid #3a456b; /* Optional: adds a border at the bottom */
+            padding: 0; /* Optional: adds padding for better appearance */
+            margin-top: 0; /* Add margin to ensure it starts below the logos */
+        }
+
+        nav::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for WebKit browsers */
+        }
+
+        nav {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+        nav ul {
+            display: flex; /* Aligns list items in a row */
+            padding: 5px;
+            margin: 0;
+            list-style: none; /* Removes default bullet points */
+        }
+
+        nav ul li {
+            display: inline-block; /* Makes each list item inline */
+            margin: 25px; /* Adds spacing between items */
+        }
+
+        nav ul li a {
+            display: block; /* Makes the entire list item clickable */
+            padding: 10px 15px;
+            text-decoration: none; /* Removes underline */
+            color: #f8f6f6; /* Text color */
+            background-color: #720604; /* Background color for better visibility */
+            border-radius: 5px; /* Rounded corners */
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+
+        nav ul li a:hover {
+            background-color: #161515; /* Background color on hover */
+        }
+
+        .header-content {
+            max-width: 120px;
+            margin: auto;
+            padding: 0 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #f2eeee;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #f2efef;
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        sa {
+            color: #131314;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Optional: background color for better text readability */
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #ffffff; /* Text color */
+        }
+        samm {
+            color: rgb(34, 55, 208);
+        }
+        footer {
+            background: rgba(117, 5, 3, 0.8); /* Slight overlay to improve text readability */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        footer .social-media a {
+            color: #fff;
+            margin: 0 1rem
+        }
+        apple {
+            color: aqua;
+        }
+        img{
+            position: center;
+            width: 600px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logos">
+        <img src="karnataka.jpg" alt="Government of Karnataka Logo" class="left-logo">
+        <center>
+            <sa>
+                <h1>Government Engineering College Hassan</h1>
+                <h2>Computer Science Engineering Department</h2>
+            </sa>
+        </center>
+        <img src="vtu.jpg" alt="VTU Logo" class="right-logo">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="a1main.html" target="_blank">Home</a></li>
+            <li><a href="a1main.html" target="_blank">Academic Programs</a></li>
+            <li><a href="a1main.html" target="_blank">Research</a></li>
+            <li><a href="a1main.html" target="_blank">Admissions</a></li>
+            <li><a href="resources.html" target="_blank">Resources</a></li>
+            <li><a href="student.html" target="_blank">Students</a></li>
+            <li><a href="timetable.html" target="_blank">Time Tables</a></li>
+            <li><a href="a1main.html" target="_blank">Contact and Visit</a></li>
+            <li><a href="a1main.html" target="_blank">About Us</a></li>
+            <li><a href="creaters.html" target="_blank">About Creaters</a></li>
+        </ul>
+        <marquee direction="right" delay="30 seconds">
+            <b>GECH-CSE Team <samm>"SAMM 2021"<samm></b>
+        </marquee>
+    </nav>
+    <section id="timetables">
+        <h2>Time Tables</h2>
+        <center>
+        <h3><p>FIRST YEAR second semester (2023-2027)</p></h3>
+        <img src="first tt.jpg" alt="Campus View 2" class="gallery-image">
+        
+        <h3><p>SECOND YEAR fourth semester (2022-2026)</p></h3>
+        <img src="second tt.png" alt="Campus View 2" class="gallery-image">
+        <h3><p>EXAM TIME TABLE </p></h3>
+        <img src="secondyear.jpg" alt="Campus View 2" class="gallery-image">
+
+        <h3><p>THIRD YEAR sixth semester (2021-2025)</p></h3>
+        <img src="third tt.png" alt="Campus View 2" class="gallery-image">
+        <h3><p>EXAM TIME TABLE</p></h3>
+        <img src="thirdyear.jpg" alt="Campus View 2" class="gallery-image">
+        <h3><p>SEMESTER updates</p></h3>
+        <img src="updates.jpg" alt="Campus View 2" class="gallery-image">
+
+        <h3><p>FOURTH YEAR (2020-2024)</p></h3>
+        <h4>No commencing of class passed out last month</h4>
+        <h3><p> SUPPLEMENTARY EXAM TIME TABLE</p></h3>
+        <img src="fianlyear.jpg" alt="Campus View 2" class="gallery-image">
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Government Engineering College Hassan - Computer Science Engineering Department</p>
+        <p>Presented By Team <b><apple>"SAMM"</apple></b> GECH-CSE</p>
+        <div class="social-media">
+            <a href="http://www.gechassan.ac.in/">Facebook</a>
+            <a href="http://www.gechassan.ac.in/">Twitter</a>
+            <a href="http://www.gechassan.ac.in/">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
